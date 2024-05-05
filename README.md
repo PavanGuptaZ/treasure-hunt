@@ -1,7 +1,7 @@
 # Treasure Hunt
 
 <p align="center">
-  <img src="https://github.com/PavanGuptaZ/treasure-hunt/assets/144094802/955bf0f4-0a55-40f1-9e26-537b5cf3ee1d" width="300">
+  <img src="https://github.com/PavanGuptaZ/treasure-hunt/assets/144094802/955bf0f4-0a55-40f1-9e26-537b5cf3ee1d" width="250">
 </p>
 
 Treasure Hunt, an interactive web-based game developed to demonstrate drag-and-drop functionality using **HTML**, **CSS**, and **JavaScript**. This game provides a fun and engaging way to test your luck and strategic thinking. Two players alternate roles between a hider and a seeker in a suspenseful quest to find hidden treasures amidst dangers.
@@ -10,7 +10,7 @@ Treasure Hunt, an interactive web-based game developed to demonstrate drag-and-d
 
 
 ## About Project
-I created Treasure Hunt during my journey learning web development to better understand and implement fundamental web technologies. This project served as a hands-on approach to mastering HTML5, CSS3, and JavaScript, with a particular focus on enhancing my skills in handling various event listeners such as **dragover**, **dragenter**, **dragleave**, and **drop**.
+I created Treasure Hunt during my journey learning web development to better understand and implement fundamental web technologies. This project served as a hands-on approach to mastering HTML5, CSS3, and JavaScript, with a particular focus on enhancing my skills in handling various event listeners such as **dragstart**, **dragend**, **dragover**, **dragenter**, **dragleave**, and **drop**.
 
 ## Game Rules
 Treasure Hunt is played with the following rules:
