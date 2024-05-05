@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="treasure.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Treasure Hunt</title>
+  <link rel="stylesheet" href="./src/Treasure_hunt.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="title">Treasure hunt</div>
+  </header>
+  <div class="game-body">
+    <div class="treasure-boxs">
+      <div class="box-row1">
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="box-row2">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="box-row3">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="box-row4">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </div>
+    <div class="game-controls">
+      <div class="turndisplay">
+        <span id="player">Hider Turn</span>
+      </div>
+      <div class="objects">
+        <div class="object">
+          <div class="drag01" id="coindrag" draggable="true">
+            <img src="./src/Images/coins.png" class="coins" alt="box">
+          </div>
+        </div>
+        <div class="object">
+          <div class="drag02" id="bombdrag" draggable="true">
+            <img src="src/Images/bomb.png" class="bomb" alt="box">
+          </div>
+        </div>
+      </div>
+      <div class="startintro">
+        <p>Hide objects by dragging and start the Game</p>
+      </div>
+
+      <div class="buttons">
+        <button id="gamestart">Start</button>
+        <button id="new-game">New Game</button>
+      </div>
+      <div class="chances" id="helper">
+        <span>Message box</span>
+        <p id="Paragraph"></p>
+      </div>
+    </div>
+  </div>
+  <div class="description">
+    <p>In the game, two players take turns playing as either the hider or the seeker. The
+      hider hides a gold object and a bomb in one of 12 empty boxes. The seeker has three tries to find the
+      box with the gold. If they choose the box with the bomb, they lose the game. The seeker needs to be
+      careful and use their luck and thinking skills to pick the right box and win the game.</p>
+  </div>
+  <script src="./src/Treasure_hunt.js"></script>
+</body>
+
+</html>

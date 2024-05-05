@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background: url(https://source.unsplash.com/NsPqV-WsZYY) center/cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  grid-template-columns: 1fr;
+  height: 50px;
+  display: grid;
+  place-content: center;
+}
+
+header .title {
+  background: #C3083F;
+  height: 100%;
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+  width: 500px;
+  border-radius: 10px;
+}
+
+.game-body {
+  width: 1250px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.treasure-boxs {
+  width: 800px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #6F2232;
+  border-radius: 10px;
+  background: url(Images/bg02.png) center/cover;
+}
+
+.game-controls {
+  width: 300px;
+  border: 1px solid #6F2232;
+  border-radius: 10px;
+  background-color: #1A1A1C;
+}
+
+.box-row1 {
+  display: flex;
+  width: 100%;
+  gap: 130px;
+  justify-content: center;
+}
+
+.box-row2 {
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+}
+
+.box-row3 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.box-row4 {
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #6F2232;
+  border-radius: 50%;
+  background-image: url(Images/close.png);
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.box.coin-box {
+  background-image: url(Images/treasure.png);
+  box-shadow: 0px 0px 20px 5px rgba(255, 215, 0, 0.7);
+
+}
+
+.box.bomb-box {
+  background-image: url(Images/bomb-box.png);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.9);
+
+}
+
+.box.in-game:hover {
+
+  box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.4);
+}
+
+.box.hovered {
+  box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.4);
+  background-image: url(Images/open.png);
+}
+
+.box.opened {
+  /* box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.4); */
+  background-image: url(Images/wrong.png);
+}
+
+.box.open {
+  /* box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.4); */
+  background-image: url(Images/open.png);
+}
+
+.box img {
+  display: none;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.objects {
+  display: flex;
+  justify-content: space-around;
+}
+
+.object {
+  width: 100px;
+  height: 100px;
+  background-color: #6F2232;
+  border-radius: 5px;
+  /* pointer-events: none; */
+}
+
+.drag01 {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: move;
+}
+
+.drag02 {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: move;
+}
+
+.object .drag01 .coins {
+  width: 80%;
+  height: 80%;
+  pointer-events: none;
+}
+
+.object .drag02 .bomb {
+  width: 80%;
+  height: 80%;
+  pointer-events: none;
+}
+
+.turndisplay {
+  background: #6F2232;
+  margin-bottom: 10px;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  height: 50px;
+}
+
+.turndisplay span {
+  font-size: 30px;
+}
+
+.turndisplay span {
+  color: #fff;
+}
+
+.description {
+  color: #fff;
+  width: 1250px;
+  padding: 10px;
+  background: #C3083F;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.startintro {
+  background: #6F2232;
+  text-align: center;
+  height: 60px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.startintro p {
+  color: #fff;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: auto;
+  padding: 0 15px;
+  height: 50px;
+  background-color: #C3083F;
+  border: none;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 800;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+#new-game {
+  display: none;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#helper {
+  margin: 10px 0;
+  text-align: center;
+  height: 30px;
+  background: #6F2232;
+  visibility: hidden;
+}
+
+.chances span {
+  color: #fff;
+}
+
+.chances p {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 18px;
+  /* line-height: 75px; */
+}
